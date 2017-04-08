@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.itcuties.examples.webapps</groupId>
+  <artifactId>jsf2-form-email-validation-example</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>jsf2-form-email-validation-example</name>
+  <url>http://www.itcuties.com</url>
+  <dependencies>
+    <!-- JSF 2 API -->
+      <!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-api -->
+      <dependency>
+          <groupId>com.sun.faces</groupId>
+          <artifactId>jsf-api</artifactId>
+          <version>2.2.13</version>
+      </dependency>
+
+      <!-- JSF 2 Implementation -->
+      <!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-impl -->
+      <dependency>
+          <groupId>com.sun.faces</groupId>
+          <artifactId>jsf-impl</artifactId>
+          <version>2.2.12</version>
+      </dependency>
+
+  </dependencies>
+  <build>
+    <finalName>validation</finalName>
+  </build>
+</project>
