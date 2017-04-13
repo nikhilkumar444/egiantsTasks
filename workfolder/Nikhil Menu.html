@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<button ng-click="myFunc()">Click Me!</button>
+
+<div ng-show="showMe">
+    <h1>Menu:</h1>
+    <div>milk</div>
+    <div ng-init="myVar1 = 'milk.jpg'"></div>
+<img ng-src="{{myVar1}}">
+    <div>coke</div>
+    <div ng-init="myVar2 = 'coke.jpg'"></div>
+<img ng-src="{{myVar2}}">
+</div>
+
+<script>
+	var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.showMe = false;
+    $scope.myFunc = function() {
+        $scope.showMe = !$scope.showMe;
+    }
+});
+</script>
+<p> Click the button to show/hide the menu. </p>
+
+</body>
+</html>
