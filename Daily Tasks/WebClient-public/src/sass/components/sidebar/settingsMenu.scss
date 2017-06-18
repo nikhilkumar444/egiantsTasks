@@ -1,0 +1,23 @@
+.settingsMenu-container .donateBtn-container {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    text-align: left
+}
+
+.settingsMenu-container .donateBtn-container div {
+    display: inherit;
+    align-items: center;
+}
+
+.settingsMenu-is-member, .settingsMenu-is-subuser {
+    .navigationSettings-is-members,
+    .navigationSettings-is-dashboard,
+    .navigationSettings-is-domains,
+    .navigationSettings-is-payments,
+    .navigationSettings-is-vpn,
+    .settingsMenu-item-donate { display: none }
+}
+
+
+body:not(.appConfigBody-is-mobile) .settingsMenu-about-app { display: none }

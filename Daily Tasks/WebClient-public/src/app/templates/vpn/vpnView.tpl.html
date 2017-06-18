@@ -1,0 +1,89 @@
+<div id="pm_settings">
+    <div class="settings">
+        <div ng-if="!vpnEnabled" class="row">
+            <section class="pm_form">
+                <header-block class="settingsVpn-header-about">
+                    <h2
+                        class="settingsVpn-title-about"
+                        translate
+                        translate-context="Title">ProtonVPN</h2>
+                </header-block>
+
+                <p class="alert alert-info" translate-context="Info" translate>ProtonVPN beta is currently available for Visionary users. If you're interested in participating in the ProtonVPN beta, consider <a ui-sref="secured.dashboard({ scroll: true })">upgrading to a Visionary plan</a>.</p>
+            </section>
+        </div>
+        <div ng-if="isPlus" class="row">
+            <section class="pm_form">
+                <p class="alert alert-info" translate-context="Info" translate>ProtonVPN is now available for free for ProtonMail Plus users during the beta period!</p>
+            </section>
+        </div>
+        <div ng-if="vpnEnabled">
+            <div class="row pm_grid">
+                <section class="pm_form col-1-2">
+                    <header-block class="settingsVpn-header-login">
+                        <h2
+                            class="settingsVpn-title-login"
+                            translate
+                            translate-context="Title">ProtonVPN Login</h2>
+                    </header-block>
+
+                    <p class="alert alert-info" translate-context="Info" translate>Use the following credentials to log into the <a href="https://protonvpn.com/download" target="_blank">ProtonVPN native clients</a>.</p>
+                    <div class="clearfix">
+                        <div class="col-4-8">
+                            <label translate-context="Label" translate>VPN Login</label>
+                        </div>
+                        <div class="col-4-8">
+                            <label class="bold">{{ VPNLogin }}</label>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="col-4-8">
+                            <label translate-context="Label" translate>VPN Password</label>
+                        </div>
+                        <div class="col-4-8">
+                            <label class="bold" translate-context="Info" translate>Same as ProtonMail login password</label>
+                        </div>
+                    </div>
+                </section>
+                <open-vpn-section></open-vpn-section>
+            </div>
+            <div class="row pm_grid">
+                <section class="pm_form col-1-2">
+
+                    <header-block class="settingsVpn-header-resources">
+                        <h2
+                            class="settingsVpn-title-resources"
+                            translate
+                            translate-context="Title">ProtonVPN Resources</h2>
+                    </header-block>
+
+                    <div class="clearfix">
+                        <div class="col-4-8">
+                            <label translate-context="Label" translate>Download ProtonVPN</label>
+                        </div>
+                        <div class="col-4-8">
+                            <a href="https://protonvpn.com/download" target="_blank" class="pm_button link" translate-context="Link" translate>Download Page</a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="col-4-8">
+                            <label translate-context="Label" translate>ProtonVPN Homepage</label>
+                        </div>
+                        <div class="col-4-8">
+                            <a href="https://protonvpn.com" target="_blank" class="pm_button link" translate-context="Link" translate>Homepage</a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="col-4-8">
+                            <label translate-context="Label" translate>Get Support for ProtonVPN</label>
+                        </div>
+                        <div class="col-4-8">
+                            <a href="https://protonvpn.com/support" target="_blank" class="pm_button link" translate-context="Link" translate>Support Page</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-1-2"></section>
+            </div>
+        </div>
+    </div>
+</div>
